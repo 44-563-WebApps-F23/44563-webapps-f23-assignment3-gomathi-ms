@@ -57,5 +57,18 @@ and mental peace.Here we are going to create a table with at least 4 kinds of sp
         <td>3 - 4</td>
     </tr>
 </table>
+<hr>
+
+<h4>Code display</h4>
+<blockquote>" Exclude category from this loop "</blockquote>
+<a href="https://stackoverflow.com/questions/57672397/exclude-category-from-this-loop">Click here for relevant question from stack overflow</a>
+<pre>&lt?php query_posts('cat=-3'); ?&gt
+
+    &lt?php if (have_posts()) : ?&gt
+    &lt?php while (have_posts()) : the_post(); ?&gt
+      &lth3&gt&lt/h3&gt	
+      &ltp&gt&lt?php the_time('F jS, Y') ?&gt&lt/p&gt
+      &lt?php the_content(); ?&gt
+    &lt?php endwhile; ?&gt&lt/pre&gt
  </body>
 </html>
